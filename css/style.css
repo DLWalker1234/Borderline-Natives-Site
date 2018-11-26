@@ -24,6 +24,7 @@ body {
     font-family: 'Nothing You Could Do', cursive;
     text-align: center;
     display: block;
+    padding-top: 5%;
 }
 
 .header {
@@ -70,10 +71,21 @@ body {
 }
 
 .arrow {
-    
-    
     animation: moveInRight 3s ease-out;
 }
+
+.btn-header {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+}
+
+.btn-header:hover {
+    color: #50BFE6;
+    text-decoration: underline;
+}
+
 
 @keyframes moveInLeft {
     0% {
@@ -98,4 +110,9 @@ body {
         opacity: 1;
         transform: translate(0);
     }
+}
+
+.btn-animated {
+    animation: buzz .5s ease-out .75s;
+    animation-fill-mode: backwards;
 }
