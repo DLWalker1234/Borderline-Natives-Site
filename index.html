@@ -3,27 +3,28 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+        <!-- Link tags -->
         <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet">
-
         <link rel="stylesheet" href="css/icon-font.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-        
+        <!-- jQuery Script tag -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Title -->
         <title>Borderline Natives</title>
     </head>
     <body>
-        <header class="header">
+        <header class="header" id="home-target">
             
             <div class="text-box">
                 <img class="arrow" src="img/arrow.png">
                 <h1 class="heading-primary">
                     <span class="heading-primary-main">Borderline Natives</span>
                     <div class="links">
-                            <a href="#" class="btn-header">Home</a>
-                            <a href="/music.html" class="btn-header">Music</a>
-                            <a href="#" class="btn-header">Merch</a>
-                            <a href="#" class="btn-header">Shows</a>
+                            <a class="btn-header" id="home">Home</a>
+                            <a class="btn-header" id="music">Music</a>
+                            <a class="btn-header" id="merch">Merch</a>
+                            <a class="btn-header" id="shows">Shows</a>
                     </div>
                 </h1>
                 
@@ -37,19 +38,28 @@
                 <a href="https://www.youtube.com/channel/UC9789o-Jg169UU4cKaoHuoA"><img class="icon" src="img/youtube.png"></a>
             </div>
 
-        <div class="music">
+        <div class="music" id="music-target">
             <div class="music-box">
                     <iframe class="spotify-player" src="https://open.spotify.com/embed/artist/2nhnmQwEaRzsGVPlIKEFxr" width="500" height="100" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
             </div>
         </div>
 
-        <div class="merch">
+        <div class="merch" id="merch-target">
             <h1 class="merch-title">Merch</h1>
+            <div class="merch-container">
+                <div class="merch-picture">
+                    <img src="img/shirts.PNG">
+                </div>
+                <div class="merch-text">
+
+                </div>
+            </div>
         </div>
 
-        <div class="shows">
+        <div class="shows" id="shows-target">
             <h1 class="shows-title">Shows</h1>
         </div>
-        
+        <!-- script tag for JavaScript -->
+        <script src="./js/script.js"></script>
     </body>
 </html>
